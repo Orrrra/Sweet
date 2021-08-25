@@ -1,6 +1,9 @@
 .main {
 	background: #fff;
 	padding: 20px 20px;
+	@media (max-width: 375px) {
+		padding: 0;
+	}
 	&__container {
 	}
 
@@ -13,12 +16,20 @@
 		letter-spacing: -1px;
 		color: #2e363e;
 		margin: 0 0 80px 0;
+		@media (max-width: 375px) {
+			font-size: 25px;
+			line-height: 45px;
+			margin: 0px 0px 50px 0px;
+		}
 	}
 
 	&__row {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		@media (max-width: 1115px) {
+			justify-content: space-around;
+		}
 	}
 
 	&__column {
